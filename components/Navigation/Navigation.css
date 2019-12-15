@@ -1,0 +1,62 @@
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-nav {
+  background-color: #007ea7;
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.app-links {
+  padding: 20px;
+}
+
+.app-links > a {
+  color: white !important;
+  text-decoration: none;
+  padding: 0px 20px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* mobile styles  */
+
+@media only screen and (max-width: 800px) {
+  .app-nav {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app-nav {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .app-title {
+    background-color: #003459;
+  }
+  .app-links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+
+  .app-links > a {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .app-title {
+    font-size: 30px;
+  }
+}
