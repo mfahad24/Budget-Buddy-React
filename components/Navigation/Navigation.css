@@ -11,7 +11,7 @@
 }
 
 .app-nav {
-  background-color: #007ea7;
+  background-color: #00a8e8;
   color: white;
   font-family: "Comfortaa", cursive;
   font-weight: bold;
@@ -43,7 +43,7 @@
     height: 100vh;
   }
   .app-title {
-    background-color: #003459;
+    background-color: #007ea7;
   }
   .app-links {
     display: flex;

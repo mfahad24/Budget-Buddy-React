@@ -1,0 +1,59 @@
+.app-home-page {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vh; */
+  /* flex-grow: 2; */
+  margin-top: 10%;
+  flex-direction: column;
+}
+
+.app-home-instruction {
+  font-size: 50px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-home-page-box {
+}
+
+.app-home-input {
+  text-align: center;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.app-home-submit {
+  margin-top: 25px;
+}
+
+/* semantic ui css override */
+
+.ui.input {
+  font-size: 2em;
+}
+
+.ui.input > input {
+  text-align: center;
+}
+
+.app-button-container {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* .app-button-submit,
+.app-button-clear {
+  padding: 0;
+} */
+
+.ui.massive.button,
+.ui.massive.buttons .button,
+.ui.massive.buttons .or {
+  padding-right: 75px;
+  padding-left: 75px;
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
