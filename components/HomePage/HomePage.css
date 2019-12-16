@@ -57,3 +57,34 @@
   border-bottom: 0 none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 }
+
+@media only screen and (max-width: 600px) {
+  .app-home-instruction {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .ui.input {
+    font-size: 1.2em;
+  }
+
+  .app-home-page {
+    margin-top: 25%;
+  }
+
+  .app-button-container {
+    text-align: center;
+  }
+
+  .ui.massive.button,
+  .ui.massive.buttons .button,
+  .ui.massive.buttons .or {
+    margin-top: 10px;
+  }
+
+  .ui.massive.button,
+  .ui.massive.buttons .button,
+  .ui.massive.buttons .or {
+    font-size: 1.5rem;
+  }
+}

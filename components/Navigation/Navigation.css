@@ -18,6 +18,21 @@
   font-size: 25px;
 }
 
+.app-nav-alt {
+  background-color: #00a8e8;
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-nav-alt-hamburger {
+  padding: 20px;
+}
+
 .app-links {
   padding: 20px;
 }
@@ -37,7 +52,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .app-nav {
     flex-direction: column;
     height: 100vh;
@@ -59,4 +74,4 @@
   .app-title {
     font-size: 30px;
   }
-}
+} */
