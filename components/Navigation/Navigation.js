@@ -20,7 +20,7 @@ class Navigation extends Component {
       return (
         <div className="app-links-alt">
           <a href="#">Home</a>
-          <a href="#">Let's Budget!</a>
+          <a href="#">Budget!</a>
           <a href="#">History</a>
         </div>
       );
@@ -37,7 +37,7 @@ class Navigation extends Component {
             <div className="app-title">Budget Buddy</div>
             <div className="app-links">
               <a href="#">Home</a>
-              <a href="#">Let's Budget!</a>
+              <a href="#">Budget!</a>
               <a href="#">History</a>
             </div>
           </nav>
