@@ -5,17 +5,15 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { altNavLinks: false };
+    this.state = { altNavLinks: false, windowWidth: 0 };
   }
   showNavLinks = () => {
-    console.log("I am first");
     return this.state.altNavLinks
       ? this.setState({ altNavLinks: false })
       : this.setState({ altNavLinks: true });
   };
 
   renderNavLinks = () => {
-    console.log("And I am second");
     if (this.state.altNavLinks) {
       return (
         <div className="app-links-alt">
@@ -27,10 +25,20 @@ class Navigation extends Component {
     }
   };
 
+  listenToResize = () => {
+    return this.setState({ windowWidth: window.innerWidth });
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.listenToResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.listenToResize);
+  }
+
   render() {
-    const isAltNavsActive = this.state.altNavLinks;
-    console.log("is alt nav active", isAltNavsActive);
-    if (window.innerWidth > 600) {
+    if (this.state.windowWidth > 600) {
       return (
         <div>
           <nav className="app-nav">
