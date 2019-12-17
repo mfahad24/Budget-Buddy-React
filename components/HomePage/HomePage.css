@@ -5,12 +5,12 @@
   align-items: center;
   /* width: 100vh; */
   /* flex-grow: 2; */
-  margin-top: 10%;
+  margin-top: 5%;
   flex-direction: column;
 }
 
 .app-home-instruction {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -32,7 +32,7 @@
 /* semantic ui css override */
 
 .ui.input {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .ui.input > input {
@@ -49,9 +49,9 @@
   padding: 0;
 } */
 
-.ui.massive.button,
-.ui.massive.buttons .button,
-.ui.massive.buttons .or {
+.ui.big.button,
+.ui.big.buttons .button,
+.ui.big.buttons .or {
   padding-right: 75px;
   padding-left: 75px;
   border-bottom: 0 none;
@@ -76,15 +76,15 @@
     text-align: center;
   }
 
-  .ui.massive.button,
-  .ui.massive.buttons .button,
-  .ui.massive.buttons .or {
+  .ui.big.button,
+  .ui.big.buttons .button,
+  .ui.big.buttons .or {
     margin-top: 10px;
   }
 
-  .ui.massive.button,
-  .ui.massive.buttons .button,
-  .ui.massive.buttons .or {
+  .ui.big.button,
+  .ui.big.buttons .button,
+  .ui.big.buttons .or {
     font-size: 1.5rem;
   }
 }
