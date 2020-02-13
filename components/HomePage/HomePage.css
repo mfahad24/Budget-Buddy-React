@@ -5,7 +5,7 @@
   align-items: center;
   /* width: 100vh; */
   /* flex-grow: 2; */
-  margin-top: 5%;
+  margin-top: 10%;
   flex-direction: column;
 }
 
@@ -69,7 +69,7 @@
   }
 
   .app-home-page {
-    margin-top: 25%;
+    margin-top: 50%;
   }
 
   .app-button-container {
