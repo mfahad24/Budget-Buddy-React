@@ -6,14 +6,27 @@ import "./HomePage.css";
 class HomePage extends Component {
   clearInputField() {
     let inputField = document.querySelector("#amount");
+    let errorMessage = document.querySelector(".app-error-container--message");
     inputField.value = "";
+    errorMessage.innerHTML = "";
   }
 
   saveBudgetValue(props) {
-    // let inputFieldValue = document.querySelector("#amount");
-    // props.saveBudgetValue
-    // props.weeklyBudget;
-    props.weeklyBudget(250);
+    let errorMessage = document.querySelector(".app-error-container--message");
+    errorMessage.innerHTML = "";
+    let inputFieldValue = document.querySelector("#amount");
+    //removes non-number characters in string
+    let numInStringOnly = inputFieldValue.value.replace(/\D/g, "");
+    //if the final value is not a number, it will alert you
+    if (!isNaN(parseInt(numInStringOnly))) {
+      props.weeklyBudget(parseInt(numInStringOnly));
+      inputFieldValue.value = "";
+    } else {
+      //this is a temporary error message
+
+      errorMessage.innerHTML = "Please enter a number!";
+      inputFieldValue.value = "";
+    }
   }
 
   render() {
@@ -29,10 +42,13 @@ class HomePage extends Component {
           <input type="text" placeholder="Amount" id="amount"></input>
           <div className="ui basic label">.00</div>
         </div>
+        <div className="app-error-container">
+          <p className="app-error-container--message"></p>
+        </div>
         <div className="app-button-container">
           <button
             className="app-button-submit ui primary button big"
-            onClick={this.saveBudgetValue(this.props)}
+            onClick={() => this.saveBudgetValue(this.props)}
           >
             Submit
           </button>

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navigation></Navigation>
       <HomePage></HomePage>
-      {/* <BudgetRemaining></BudgetRemaining> */}
+      <BudgetRemaining></BudgetRemaining>
     </div>
   );
 }
