@@ -1,0 +1,99 @@
+.app-home-page {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vh; */
+  /* flex-grow: 2; */
+  margin-top: 10%;
+  flex-direction: column;
+}
+
+.app-home-instruction {
+  font-size: 40px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-home-page-box {
+}
+
+.app-home-input {
+  text-align: center;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.app-home-submit {
+  margin-top: 25px;
+}
+
+/* semantic ui css override */
+
+.ui.input {
+  font-size: 1.5em;
+}
+
+.ui.input > input {
+  text-align: center;
+}
+
+.app-error-container {
+  font-size: 20px;
+  color: firebrick;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  /* text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); */
+}
+
+.app-button-container {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* .app-button-submit,
+.app-button-clear {
+  padding: 0;
+} */
+
+.ui.big.button,
+.ui.big.buttons .button,
+.ui.big.buttons .or {
+  padding-right: 75px;
+  padding-left: 75px;
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+@media only screen and (max-width: 600px) {
+  .app-home-instruction {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .ui.input {
+    font-size: 1.2em;
+  }
+
+  .app-home-page {
+    margin-top: 50%;
+  }
+
+  .app-button-container {
+    text-align: center;
+  }
+
+  .ui.big.button,
+  .ui.big.buttons .button,
+  .ui.big.buttons .or {
+    margin-top: 10px;
+  }
+
+  .ui.big.button,
+  .ui.big.buttons .button,
+  .ui.big.buttons .or {
+    font-size: 1.5rem;
+  }
+}
