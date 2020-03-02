@@ -17,10 +17,15 @@ class HomePage extends Component {
     errorMessage.innerHTML = "";
     let inputFieldValue = document.querySelector("#amount");
     //removes non-number characters in string
-    let numInStringOnly = inputFieldValue.value.replace(/\D/g, "");
+    let numInStringOnly = inputFieldValue.value.replace(/[^\d.-]/g, "");
+
     //if the final value is not a number, it will alert you
     if (!isNaN(parseInt(numInStringOnly))) {
-      props.weeklyBudget(parseInt(numInStringOnly));
+      let fixNumberToTwoDecimals = parseFloat(numInStringOnly).toFixed(2);
+      //difference between parseFloat and parseInt?
+      //parseFloat takes a number and outputs parseInt
+      //Number sets it back
+      props.weeklyBudget(Number(fixNumberToTwoDecimals));
       inputFieldValue.value = "";
     } else {
       //this is a temporary error message
