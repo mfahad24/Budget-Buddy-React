@@ -6,7 +6,7 @@ class BudgetRemaining extends Component {
   render() {
     return (
       <div className="app-budget-remaining">
-        <p className="app-budget-remaining--title">Budget Remaining</p>
+        <p className="app-budget-remaining--title">Remaining Budget</p>
         <p className="app-budget-remaining--value">
           {"$" +
             this.props.weeklyBudgetBank
@@ -14,7 +14,9 @@ class BudgetRemaining extends Component {
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
           {/* https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript */}
         </p>
+
         <div></div>
+        {/* phantom div */}
         {/* <p className="app-budget-remaining--instruction">
           Please select purchase category:
         </p> */}

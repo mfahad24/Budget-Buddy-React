@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { weeklyBudget } from "./actions";
+import { weeklyBudget, initialBudget } from "./actions";
 import "./HomePage.css";
 
 class HomePage extends Component {
@@ -26,6 +26,7 @@ class HomePage extends Component {
       //parseFloat takes a number and outputs parseInt
       //Number sets it back
       props.weeklyBudget(Number(fixNumberToTwoDecimals));
+      props.initialBudget(Number(fixNumberToTwoDecimals));
       inputFieldValue.value = "";
     } else {
       //this is a temporary error message
@@ -72,8 +73,10 @@ class HomePage extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {};
 };
 
-export default connect(mapStateToProps, { weeklyBudget })(HomePage);
+export default connect(mapStateToProps, { weeklyBudget, initialBudget })(
+  HomePage
+);

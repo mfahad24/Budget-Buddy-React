@@ -40,3 +40,9 @@
 body {
   background: #007ea7; /* fallback for old browsers */
 }
+
+.App--budget-tickers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

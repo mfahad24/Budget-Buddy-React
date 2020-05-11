@@ -1,4 +1,4 @@
-.app-budget-remaining {
+.app-initial-budget {
   font-family: "Comfortaa", cursive;
   margin-top: 5%;
   display: flex;
@@ -12,33 +12,18 @@
   width: 30%;
   padding: 40px 20px 0px 20px;
 }
-.app-budget-remaining--title {
+.app-initial-budget--title {
   font-size: 15px;
   color: white;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
-.app-budget-remaining--value {
+.app-initial-budget--value {
   font-size: 40px;
   color: white;
   padding: 10px 20px;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-.app-budget-remaining--instruction {
-  font-size: 30px;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-.app-budget-remaining--expense-amount {
-  text-align: center;
-  box-shadow: 0 8px 6px -6px black;
-}
-
-.app-budget-remaining--expense-type {
-  padding: 10px 0px;
-  /* box-shadow: 0 8px 6px -6px black; */
 }

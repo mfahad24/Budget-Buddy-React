@@ -1,1 +1,0 @@
-export const WEEKLY_BUDGET = "WEEKLY_BUDGET";
