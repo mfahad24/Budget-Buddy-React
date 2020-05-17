@@ -9,7 +9,7 @@ class ExpenseEntry extends Component {
     super();
     this.state = {
       subtractValue: "",
-      subtractValueType: null,
+      subtractValueType: "",
     };
 
     this.saveExpense = this.saveExpense.bind(this);
@@ -30,6 +30,10 @@ class ExpenseEntry extends Component {
       ":",
       this.state.subtractValue
     );
+    this.props.subtractFromBudget(this.state.subtractValue);
+    let expenseInput = document.querySelector(".expense-entry--number");
+    console.log(expenseInput);
+    expenseInput.value = "";
   }
   render() {
     return (
@@ -44,9 +48,10 @@ class ExpenseEntry extends Component {
           <select
             value={this.state.subtractValueType}
             onChange={this.saveExpense}
+            className="expense-entry--select"
           >
             {/* left off here  */}
-            <option selected value="---">
+            <option defaultValue value="---">
               Select the type of expense
             </option>
             <option value="food">Food</option>
@@ -58,8 +63,13 @@ class ExpenseEntry extends Component {
             placeholder="Amount"
             value={this.state.subtractValue}
             onChange={this.saveExpense}
+            className="expense-entry--number"
           />
-          <input type="submit" value="Submit" />
+          <input
+            type="submit"
+            value="Submit"
+            className="expense-entry--submit"
+          />
         </form>
       </div>
     );

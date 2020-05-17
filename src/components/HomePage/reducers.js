@@ -7,7 +7,9 @@ import { combineReducers } from "redux";
 
 const weeklyBudgetBank = (weeklyBudget = 0, action) => {
   if (action.type === WEEKLY_BUDGET) {
-    return action.payload;
+    return (weeklyBudget = action.payload);
+  } else if (action.type === SUBTRACT_FROM_REMAINING_BUDGET) {
+    return (weeklyBudget -= action.payload);
   } else {
     return weeklyBudget;
   }
