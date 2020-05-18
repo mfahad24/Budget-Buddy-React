@@ -25,15 +25,12 @@ class ExpenseEntry extends Component {
   updateStoreBudget(event) {
     event.preventDefault();
     console.log(
-      "values",
-      this.state.subtractValueType,
-      ":",
-      this.state.subtractValue
+      `Your ${this.state.subtractValueType} expense is registered as ${this.state.subtractValue} dollars`
     );
     this.props.subtractFromBudget(this.state.subtractValue);
-    let expenseInput = document.querySelector(".expense-entry--number");
-    console.log(expenseInput);
-    expenseInput.value = "";
+    this.setState({
+      subtractValue: "",
+    });
   }
   render() {
     return (

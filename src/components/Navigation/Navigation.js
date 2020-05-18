@@ -17,9 +17,9 @@ class Navigation extends Component {
     if (this.state.altNavLinks) {
       return (
         <div className="app-links-alt">
-          <a href="#">Home</a>
+          {/* <a href="#">Home</a>
           <a href="#">Budget!</a>
-          <a href="#">History</a>
+          <a href="#">History</a> */}
         </div>
       );
     }
@@ -63,9 +63,9 @@ class Navigation extends Component {
           <nav className="app-nav">
             <div className="app-title">Budget Buddy</div>
             <div className="app-links">
-              <a href="#">Home</a>
+              {/* <a href="#">Home</a>
               <a href="#">Budget!</a>
-              <a href="#">History</a>
+              <a href="#">History</a> */}
             </div>
           </nav>
         </div>

@@ -17,7 +17,7 @@ const weeklyBudgetBank = (weeklyBudget = 0, action) => {
 
 const initialBudgetValue = (initialBudgetValue = 0, action) => {
   if (action.type === INITIAL_BUDGET_VALUE) {
-    console.log("here it is", action.payload);
+    console.log("You have a starting budget of", action.payload);
     return action.payload;
   } else {
     return initialBudgetValue;
